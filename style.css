@@ -1,54 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    background: #ffffff;
+    color: #222222;
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    background: #fff;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: 60px 30px 80px 30px;
 }
+
+/* Header */
 
 header {
     margin-bottom: 60px;
 }
 
 h1 {
+    margin: 0 0 18px 0;
     font-size: 42px;
     font-weight: 500;
-    margin: 0 0 5px 0;
+    letter-spacing: -0.5px;
 }
 
-.subtitle {
-    font-size: 17px;
-    color: #666;
-    margin: 0 0 22px 0;
+.chinese-name {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+nav {
+    margin-top: 5px;
 }
 
 nav a {
-    margin-right: 22px;
+    margin-right: 26px;
+    color: #333333;
+    font-size: 16px;
     text-decoration: none;
-    color: #333;
-    font-size: 15px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+/* Intro */
+
 .intro {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 50px;
     align-items: start;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .photo img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -58,34 +71,96 @@ nav a:hover {
 
 .bio p {
     margin-top: 0;
-    margin-bottom: 18px;
-}
-
-section {
-    margin-bottom: 60px;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: 500;
     margin-bottom: 20px;
 }
 
+.email {
+    margin-top: 28px;
+    font-size: 16px;
+}
+
+.email a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+
+section {
+    margin-bottom: 75px;
+}
+
+h2 {
+    margin: 0 0 28px 0;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.research-item {
+    margin-bottom: 40px;
+}
+
+.paper-title {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.paper-links {
+    margin-top: 8px;
+}
+
+.paper-links a {
+    margin-right: 16px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.paper-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+
 @media (max-width: 700px) {
+
     .container {
-        padding: 35px 22px;
-    }
-
-    .intro {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .photo {
-        max-width: 220px;
+        padding: 35px 22px 60px 22px;
     }
 
     h1 {
         font-size: 34px;
+    }
+
+    .chinese-name {
+        font-size: 23px;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-bottom: 60px;
+    }
+
+    .photo {
+        max-width: 230px;
+    }
+
+    .bio {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin-right: 18px;
     }
 }
