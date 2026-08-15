@@ -157,6 +157,13 @@ h2 {
     line-height: 1.45;
 }
 
+.coauthors {
+    margin: -2px 0 8px 0;
+    font-size: 15px;
+    color: #555555;
+    font-style: italic;
+}
+
 
 /* Paper / Slides links */
 
@@ -218,6 +225,53 @@ h2 {
 #teaching p {
     margin-top: 0;
     font-size: 16px;
+}
+
+/* =========================
+   Teaching
+   ========================= */
+
+.teaching-group h3 {
+    margin: 0 0 2px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.teaching-role {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.teaching-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    max-width: 720px;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.course-title {
+    color: #333333;
+}
+
+.course-level {
+    margin-left: 8px;
+    color: #777777;
+    font-size: 13px;
+}
+
+.course-level::before {
+    content: "· ";
+}
+
+.teaching-year {
+    flex-shrink: 0;
+    color: #666666;
+    font-size: 14px;
 }
 
 
