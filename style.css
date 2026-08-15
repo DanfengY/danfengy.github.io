@@ -139,12 +139,12 @@ h2 {
 }
 
 .research-item h3 {
-    margin: 0 0 8px 0;
-    color: #666666;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
+    margin: 0 0 12px 0;
+    color: #444444;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
 }
 
 
