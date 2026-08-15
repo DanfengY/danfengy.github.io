@@ -263,14 +263,10 @@ h2 {
 }
 
 .teaching-item {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    column-gap: 30px;
+    display: flex;
     align-items: baseline;
-
-    width: 100%;
+    flex-wrap: wrap;
     margin-bottom: 7px;
-
     font-size: 15px;
     line-height: 1.5;
 }
@@ -290,9 +286,13 @@ h2 {
 }
 
 .teaching-year {
-    color: #666666;
-    font-size: 14px;
-    white-space: nowrap;
+    margin-left: 7px;
+    color: #777777;
+    font-size: 13px;
+}
+
+.teaching-year::before {
+    content: "· ";
 }
 
 
