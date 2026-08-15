@@ -90,7 +90,7 @@ nav a:hover {
     grid-template-columns: 240px 1fr;
     gap: 50px;
     align-items: start;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
 }
 
 .photo img {
@@ -119,11 +119,12 @@ nav a:hover {
    ========================= */
 
 section {
-    margin-bottom: 75px;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
 h2 {
-    margin: 0 0 28px 0;
+    margin: 0 0 34px 0;
     font-size: 27px;
     font-weight: 500;
     line-height: 1.3;
@@ -134,17 +135,30 @@ h2 {
    Research
    ========================= */
 
-.research-item {
-    margin-bottom: 55px;
+.research-group {
+    margin-bottom: 72px;
 }
 
-.research-item h3 {
-    margin: 0 0 12px 0;
-    color: #444444;
-    font-size: 17px;
+.research-group:last-child {
+    margin-bottom: 0;
+}
+
+.research-group h3 {
+    margin: 0 0 22px 0;
+    color: #222222;
+    font-size: 20px;
     font-weight: 600;
+    line-height: 1.3;
     text-transform: none;
     letter-spacing: 0;
+}
+
+.paper {
+    margin-bottom: 44px;
+}
+
+.paper:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -152,13 +166,16 @@ h2 {
 
 .paper-title {
     margin: 0 0 6px 0;
-    font-size: 19px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
     line-height: 1.45;
 }
 
+
+/* Coauthors */
+
 .coauthors {
-    margin: -2px 0 8px 0;
+    margin: -1px 0 8px 0;
     font-size: 15px;
     color: #555555;
     font-style: italic;
@@ -188,7 +205,7 @@ h2 {
 /* Abstract */
 
 .abstract {
-    max-width: 800px;
+    width: 100%;
     margin-top: 18px;
     margin-bottom: 18px;
     font-size: 15px;
@@ -204,7 +221,7 @@ h2 {
 /* Presentations */
 
 .presentation {
-    max-width: 800px;
+    width: 100%;
     margin-top: 16px;
     margin-bottom: 0;
     color: #555555;
@@ -223,11 +240,15 @@ h2 {
    ========================= */
 
 .teaching-group {
-    margin-bottom: 34px;
+    margin-bottom: 38px;
+}
+
+.teaching-group:last-child {
+    margin-bottom: 0;
 }
 
 .teaching-group h3 {
-    margin: 0 0 2px 0;
+    margin: 0 0 3px 0;
     font-size: 17px;
     font-weight: 600;
     color: #222222;
@@ -247,7 +268,7 @@ h2 {
     column-gap: 30px;
     align-items: baseline;
 
-    max-width: 720px;
+    width: 100%;
     margin-bottom: 7px;
 
     font-size: 15px;
@@ -272,27 +293,6 @@ h2 {
     color: #666666;
     font-size: 14px;
     white-space: nowrap;
-}
-
-
-/* Mobile teaching layout */
-
-@media (max-width: 700px) {
-
-    .teaching-item {
-        grid-template-columns: 1fr auto;
-        column-gap: 15px;
-    }
-
-    .course-level {
-        display: block;
-        margin-left: 0;
-        margin-top: 1px;
-    }
-
-    .course-level::before {
-        content: "";
-    }
 }
 
 
@@ -326,7 +326,7 @@ h2 {
     .intro {
         grid-template-columns: 1fr;
         gap: 28px;
-        margin-bottom: 60px;
+        margin-bottom: 65px;
     }
 
     .photo {
@@ -338,15 +338,29 @@ h2 {
     }
 
     section {
-        margin-bottom: 60px;
+        margin-bottom: 65px;
     }
 
     h2 {
+        margin-bottom: 28px;
         font-size: 24px;
     }
 
-    .paper-title {
+    .research-group {
+        margin-bottom: 58px;
+    }
+
+    .research-group h3 {
+        margin-bottom: 18px;
         font-size: 18px;
+    }
+
+    .paper {
+        margin-bottom: 36px;
+    }
+
+    .paper-title {
+        font-size: 17px;
     }
 
     .abstract {
@@ -356,5 +370,20 @@ h2 {
 
     .presentation {
         font-size: 14px;
+    }
+
+    .teaching-item {
+        grid-template-columns: 1fr auto;
+        column-gap: 15px;
+    }
+
+    .course-level {
+        display: block;
+        margin-left: 0;
+        margin-top: 1px;
+    }
+
+    .course-level::before {
+        content: "";
     }
 }
