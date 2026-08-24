@@ -204,14 +204,14 @@ h2 {
 /* Figure */
 
 .paper-figure {
-    margin: 24px auto 30px auto;
+    margin: 22px auto 26px auto;
     text-align: center;
 }
 
 .paper-figure img {
     display: block;
-    width: 92%;
-    max-width: 720px;
+    width: 75%;
+    max-width: 650px;
     height: auto;
     margin: 0 auto;
 }
@@ -377,6 +377,9 @@ h2 {
         font-size: 17px;
     }
 
+   .paper-figure img {
+        width: 100%;
+    }
     .abstract {
         font-size: 15px;
         text-align: left;
