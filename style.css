@@ -390,6 +390,13 @@ h2 {
    .paper-figure img {
         width: 100%;
     }
+
+    .paper-figure .figure-caption {
+        width: 92%;
+        max-width: none;
+        font-size: 12px;
+    }
+
     .abstract {
         font-size: 15px;
         text-align: left;
