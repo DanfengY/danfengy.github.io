@@ -201,6 +201,20 @@ h2 {
     text-underline-offset: 3px;
 }
 
+/* Figure */
+
+.paper-figure {
+    margin: 24px auto 30px auto;
+    text-align: center;
+}
+
+.paper-figure img {
+    display: block;
+    width: 92%;
+    max-width: 720px;
+    height: auto;
+    margin: 0 auto;
+}
 
 /* Abstract */
 
