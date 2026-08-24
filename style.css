@@ -204,13 +204,14 @@ h2 {
 /* Figure */
 
 .figure-caption {
-    width: 75%;
-    max-width: 650px;
+    width: 68%;
+    max-width: 600px;
     margin: 8px auto 0 auto;
     color: #666666;
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.45;
     text-align: left;
+    font-weight: 400;
 }
 
 .paper-figure {
