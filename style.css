@@ -216,12 +216,12 @@ h2 {
 }
 
 .paper-figure .figure-caption {
-    width: 70%;
-    max-width: 520px;
-    margin: 8px auto 0 auto;
-    color: #666666;
-    font-size: 12px;
-    line-height: 1.4;
+    width: 72%;
+    max-width: 640px;
+    margin: 10px auto 0 auto;
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.5;
     text-align: left;
     font-weight: 400;
 }
