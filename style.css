@@ -166,9 +166,9 @@ h2 {
 
 .paper-title {
     margin: 0 0 6px 0;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.45;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 
@@ -203,20 +203,8 @@ h2 {
 
 /* Figure */
 
-.figure-caption {
-    width: 68%;
-    max-width: 600px;
-    margin: 8px auto 0 auto;
-    color: #666666;
-    font-size: 12px;
-    line-height: 1.45;
-    text-align: left;
-    font-weight: 400;
-}
-
 .paper-figure {
-    margin: 24px auto 26px auto;
-    text-align: center;
+    margin: 26px auto 28px auto;
 }
 
 .paper-figure img {
@@ -225,6 +213,17 @@ h2 {
     max-width: 600px;
     height: auto;
     margin: 0 auto;
+}
+
+.paper-figure .figure-caption {
+    width: 58%;
+    max-width: 520px;
+    margin: 8px auto 0 auto;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: left;
+    font-weight: 400;
 }
 
 /* Abstract */
